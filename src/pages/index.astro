@@ -10,16 +10,12 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <a
-    slot='nav'
-    href='https://es3n1n.eu/'
-    target='_blank'
-    rel='noopener noreferrer'>[contacts]</a
-  >
+  <a slot='nav' href='/about/'>[about]</a>
+  <a slot='nav' href='/rss.xml'>[rss]</a>
 
   <p>
-    welcome to my blog. i write about reverse engineering, security research,
-    and random programming stuff.
+    hi, i write mostly about reverse engineering, security research, and other
+    computer-adjacent topics
   </p>
 
   <div class='ascii-sep'></div>

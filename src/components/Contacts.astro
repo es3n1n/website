@@ -1,0 +1,51 @@
+---
+import { CONTACTS } from '../consts'
+import Tooltip from './Tooltip.astro'
+
+const labelWidth = Math.max(...CONTACTS.map(c => c.label.length))
+---
+
+<ul class='post-list contact-list' style={`--contact-label-w: ${labelWidth}ch`}>
+  {
+    CONTACTS.map(c => (
+      <li class='post-item'>
+        <span class='post-date contact-label'>{c.label}</span> -{' '}
+        {'href' in c ? (
+          c.href.startsWith('mailto:') ? (
+            <a href={c.href}>{c.text}</a>
+          ) : (
+            <a href={c.href} target='_blank' rel='noopener noreferrer'>
+              {c.text}
+            </a>
+          )
+        ) : (
+          <Tooltip text='click to copy'>
+            <a href='#' data-copy={c.copy}>
+              {c.text}
+            </a>
+          </Tooltip>
+        )}
+      </li>
+    ))
+  }
+</ul>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('a[data-copy]').forEach(el => {
+    el.addEventListener('click', async e => {
+      e.preventDefault()
+      const value = el.dataset.copy ?? ''
+
+      try {
+        await navigator.clipboard.writeText(value)
+      } catch {
+        prompt('copy', value)
+        return
+      }
+
+      const prev = el.textContent
+      el.textContent = 'copied!'
+      setTimeout(() => (el.textContent = prev), 1200)
+    })
+  })
+</script>

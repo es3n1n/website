@@ -341,6 +341,17 @@ hr {
   color: rgb(var(--gray));
 }
 
+.site-name {
+  font-size: 1em;
+  line-height: inherit;
+  margin: 0 0 0.25em 0;
+}
+
+.contact-label {
+  display: inline-block;
+  width: var(--contact-label-w);
+}
+
 /* article styles */
 article h1::before {
   content: '# ';

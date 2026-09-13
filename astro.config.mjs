@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx'
 import { transformerNotationDiff } from '@shikijs/transformers'
 import { defineConfig } from 'astro/config'
 
-const SITE = 'https://blog.es3n1n.eu'
+const SITE = 'https://es3n1n.eu'
 const SITE_HOST = new URL(SITE).hostname
 
 /**

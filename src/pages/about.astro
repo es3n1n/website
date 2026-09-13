@@ -1,0 +1,37 @@
+---
+import Contacts from '../components/Contacts.astro'
+import { AUTHOR, SITE_DESCRIPTION } from '../consts'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title='about' description={SITE_DESCRIPTION}>
+  <a slot='nav' href='/'>[index]</a>
+
+  <h1 class='site-name'>{AUTHOR}</h1>
+
+  <p>
+    hi, im a {new Date().getFullYear() - 2005} years old somewhat of a (developer,
+    security researcher, ctf player)
+  </p>
+
+  <p>
+    currently i am living in europe and working as a fulltime security researcher
+    at a blockchain security company <a href='//osec.io'>OtterSec</a>
+  </p>
+
+  <p>
+    it's really hard to list all of my interests, but the ones off the top of
+    my head include:
+  </p>
+  <ul>
+    <li>reverse engineering</li>
+    <li>(de)obfuscation</li>
+    <li>both high and low level software development</li>
+    <li>distributed systems engineering</li>
+    <li>kubernetes/everything else infra related</li>
+  </ul>
+
+  <div class='ascii-sep'></div>
+
+  <Contacts />
+</Layout>
