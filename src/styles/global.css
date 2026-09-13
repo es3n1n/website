@@ -352,6 +352,21 @@ hr {
   width: var(--contact-label-w);
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0 0 1em 0;
+}
+
+.buttons img {
+  display: block;
+  width: 88px;
+  height: 31px;
+  margin: 0;
+  image-rendering: pixelated;
+}
+
 /* article styles */
 article h1::before {
   content: '# ';

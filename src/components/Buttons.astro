@@ -1,0 +1,19 @@
+---
+import type { Banner } from '../consts'
+
+interface Props {
+  items: Banner[]
+}
+
+const { items } = Astro.props
+---
+
+<div class='buttons'>
+  {
+    items.map(b => (
+      <a href={b.href} target='_blank' rel='noopener noreferrer'>
+        <img src={b.img} width='88' height='31' loading='lazy' />
+      </a>
+    ))
+  }
+</div>

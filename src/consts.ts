@@ -7,6 +7,8 @@ export type Contact = { label: string; text: string } & (
   { href: string } | { copy: string }
 )
 
+export type Banner = { href: string; img: string }
+
 export const CONTACTS: Contact[] = [
   {
     label: 'github',
@@ -28,5 +30,27 @@ export const CONTACTS: Contact[] = [
     label: 'mail',
     text: 'contact@es3n1n.eu',
     href: 'mailto:contact@es3n1n.eu',
+  },
+]
+
+export const FRIENDS: Banner[] = [
+  {
+    href: 'https://nullablevo.id.au/',
+    img: 'https://nullablevo.id.au/images/button.png',
+  },
+  {
+    href: 'https://zelda.li/',
+    img: 'https://zelda.li/banner_v2.gif',
+  },
+]
+
+export const BANNERS: Banner[] = [
+  {
+    href: 'https://es3n1n.eu/',
+    img: 'https://cdn.es3n1n.io/web-assets/88x31.png',
+  },
+  {
+    href: 'https://es3n1n.eu/',
+    img: 'https://cdn.es3n1n.io/web-assets/88x31-alt.png',
   },
 ]
