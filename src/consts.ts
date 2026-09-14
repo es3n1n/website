@@ -53,4 +53,8 @@ export const BANNERS: Banner[] = [
     href: 'https://es3n1n.eu/',
     img: 'https://cdn.es3n1n.io/web-assets/88x31-alt.png',
   },
+  {
+    href: 'https://www.slsknet.org/',
+    img: 'https://88x31.nl/gifs/soulseek.gif',
+  }
 ]
