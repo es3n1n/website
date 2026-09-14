@@ -35,6 +35,10 @@ export const CONTACTS: Contact[] = [
 
 export const PEOPLE: Banner[] = [
   {
+    href: 'https://mixy.one',
+    img: 'https://cdn.es3n1n.io/web-assets/mixy1.gif',
+  },
+  {
     href: 'https://nullablevo.id.au/',
     img: 'https://nullablevo.id.au/images/button.png',
   },
