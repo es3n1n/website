@@ -42,6 +42,10 @@ export const FRIENDS: Banner[] = [
     href: 'https://zelda.li/',
     img: 'https://zelda.li/banner_v2.gif',
   },
+  {
+    href: 'https://tei.pet/',
+    img: 'https://tei.pet/88x31/teidesu.png',
+  }
 ]
 
 export const BANNERS: Banner[] = [
