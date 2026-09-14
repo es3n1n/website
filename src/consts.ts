@@ -33,7 +33,7 @@ export const CONTACTS: Contact[] = [
   },
 ]
 
-export const FRIENDS: Banner[] = [
+export const PEOPLE: Banner[] = [
   {
     href: 'https://nullablevo.id.au/',
     img: 'https://nullablevo.id.au/images/button.png',
