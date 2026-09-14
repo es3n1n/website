@@ -43,9 +43,17 @@ export const FRIENDS: Banner[] = [
     img: 'https://zelda.li/banner_v2.gif',
   },
   {
+    href: 'https://z1x.us/',
+    img: 'https://z1x.us/buttons/z1xus.gif',
+  },
+  {
+    href: 'https://0xnubb.com/',
+    img: 'https://0xnubb.com/buttons/nubb.gif',
+  },
+  {
     href: 'https://tei.pet/',
     img: 'https://tei.pet/88x31/teidesu.png',
-  }
+  },
 ]
 
 export const BANNERS: Banner[] = [
@@ -60,5 +68,5 @@ export const BANNERS: Banner[] = [
   {
     href: 'https://www.slsknet.org/',
     img: 'https://88x31.nl/gifs/soulseek.gif',
-  }
+  },
 ]
