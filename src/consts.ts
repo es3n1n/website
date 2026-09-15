@@ -73,4 +73,8 @@ export const BANNERS: Banner[] = [
     href: 'https://www.slsknet.org/',
     img: 'https://88x31.nl/gifs/soulseek.gif',
   },
+  {
+    href: 'https://en.wikipedia.org/wiki/Hatsune_Miku',
+    img: 'https://cdn.es3n1n.io/web-assets/miku.gif',
+  },
 ]
