@@ -39,6 +39,10 @@ export const PEOPLE: Banner[] = [
     img: 'https://cdn.es3n1n.io/web-assets/mixy1.gif',
   },
   {
+    href: 'https://str.lc/',
+    img: 'https://str.lc/assets/img/button.gif',
+  },
+  {
     href: 'https://nullablevo.id.au/',
     img: 'https://nullablevo.id.au/images/button.png',
   },
