@@ -62,6 +62,10 @@ export const PEOPLE: Banner[] = [
     href: 'https://tei.pet/',
     img: 'https://tei.pet/88x31/teidesu.png',
   },
+  {
+    href: 'https://rab.lol/',
+    img: 'https://rab.lol/assets/buttons/me.gif',
+  }
 ]
 
 export const BANNERS: Banner[] = [
