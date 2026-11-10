@@ -367,6 +367,11 @@ hr {
   image-rendering: pixelated;
 }
 
+:root:not([data-theme='dark']) .buttons img.theme-dark,
+:root[data-theme='dark'] .buttons img.theme-light {
+  display: none;
+}
+
 /* article styles */
 article h1::before {
   content: '# ';

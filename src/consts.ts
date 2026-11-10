@@ -7,7 +7,7 @@ export type Contact = { label: string; text: string } & (
   { href: string } | { copy: string }
 )
 
-export type Banner = { href: string; img: string }
+export type Banner = { href: string; img: string; imgDark?: string }
 
 export const CONTACTS: Contact[] = [
   {
@@ -41,6 +41,15 @@ export const PEOPLE: Banner[] = [
   {
     href: 'https://str.lc/',
     img: 'https://str.lc/assets/img/button.gif',
+  },
+  {
+    href: 'https://enscribe.dev',
+    img: 'https://enscribe.dev/88x31-light.gif',
+    imgDark: 'https://enscribe.dev/88x31-dark.gif',
+  },
+  {
+    href: 'https://herogamers.dev/',
+    img: 'https://herogamers.dev/badges/hero.png',
   },
   {
     href: 'https://nullablevo.id.au/',

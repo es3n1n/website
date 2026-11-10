@@ -12,7 +12,26 @@ const { items } = Astro.props
   {
     items.map(b => (
       <a href={b.href} target='_blank' rel='noopener noreferrer'>
-        <img src={b.img} width='88' height='31' loading='lazy' />
+        {b.imgDark ? (
+          <>
+            <img
+              class='theme-light'
+              src={b.img}
+              width='88'
+              height='31'
+              loading='lazy'
+            />
+            <img
+              class='theme-dark'
+              src={b.imgDark}
+              width='88'
+              height='31'
+              loading='lazy'
+            />
+          </>
+        ) : (
+          <img src={b.img} width='88' height='31' loading='lazy' />
+        )}
       </a>
     ))
   }
